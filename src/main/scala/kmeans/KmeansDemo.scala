@@ -1,5 +1,8 @@
 package kmeans
 
+/**
+  * 使用Kmeans++计算出数据的中心点
+  */
 
 import org.apache.spark.mllib.clustering.KMeans
 import org.apache.spark.mllib.linalg.Vectors
