@@ -5,6 +5,11 @@ import org.apache.spark.sql.SparkSession
 /**
   * spark计算支持度和置信度
   */
+
+/**
+  * TODO 这个案例中的数据是全部进行计算的,可以将单个value值过滤一遍,
+  * 比如有些公司只有很少的人喜欢,那么过滤掉这部分数据,会大大减小计算量
+  */
 object SupportAndConfidence {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
